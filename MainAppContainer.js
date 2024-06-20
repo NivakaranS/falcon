@@ -30,7 +30,7 @@ const MainAppContainer = () => {
 
             if (routeName === 'Home') {
               iconSource = homeIcon;
-            } else if (routeName === 'Profile') {
+            } else if (routeName === 'You') {
               iconSource = settingsIcon;
             } else if (routeName === 'Explore') {
                 iconSource = exploreIcon;
@@ -44,8 +44,8 @@ const MainAppContainer = () => {
               <Image
                 source={iconSource}
                 style={{
-                  width: 30,
-                  height: 30,
+                  width: 34,
+                  height: 34,
                   tintColor: focused ? 'black' : 'gray',
                 }}
               />
@@ -53,14 +53,18 @@ const MainAppContainer = () => {
           },
           tabBarStyle: {
             backgroundColor: 'white',
-            height: 70,
+            height: 75,
             paddingBottom: 10,
             paddingTop: 10,
+            
           },
+          headerShown: false,
           activeTintColor: 'gray',
           inactiveTintColor: 'black',
           tabBarActiveTintColor: 'black',
-          
+          tabBarLabelStyle: {
+            fontSize: 11
+          }
         })}
         
       >
@@ -69,11 +73,12 @@ const MainAppContainer = () => {
         <Tab.Screen name="Falcon" component={Falcon} />
         <Tab.Screen name="Map" component={Map} />
         <Tab.Screen
-          name="Profile"
+          
+          name="You"
           component={Profile}
           options={{
-            title: 'Profile',
-            tabBarLabel: 'Profile',
+            title: 'You',
+            tabBarLabel: 'You',
           }}
         />
       </Tab.Navigator>

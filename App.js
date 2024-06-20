@@ -6,6 +6,7 @@ import MainAppContainer from './MainAppContainer';
 export default function App() {
   return (
     <View style={{flex: 1}}>
+      
       <MainAppContainer/>
 
             
