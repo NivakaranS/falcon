@@ -137,17 +137,7 @@ const TravelScreen = () => {
 
     return (
         <View style={styles.container}>
-            <GooglePlacesAutocomplete
-                placeholder='Search here'
-                onPress={handlePlaceSelected}
-                query={
-                    {key: GOOGLE_MAPS_API_KEY,
-                    language: 'en'}
-                }
-                styles={{
-                    textInput: styles.searchInput
-                }}
-            />
+            
             {currentLocation ? (
                 <MapView
                 style={styles.map}
@@ -187,12 +177,13 @@ export default function Map() {
 
     const HeaderLeft = ({ navigation }) => {
         return(
-            <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+            <View style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flex: 1}}>
                 <TouchableOpacity  onPress={() => navigation.toggleDrawer()} style={styles.menuButton}>
                     <Ionicons name='menu' size={32} color="black" />
                 </TouchableOpacity>
+                
                 <TextInput
-                    style={{backgroundColor: 'white', width: 'auto', width: '68%',  paddingVertical: 10, paddingHorizontal: 20, fontSize: 17, borderRadius: 35}}
+                    style={{backgroundColor: 'white', position: 'relative',  paddingVertical: 10, paddingHorizontal: 20, fontSize: 17, borderRadius: 35, width: '67%'}}
                     placeholder='Search here'
                     value={searchQuery}
                     onChangeText={setSearchQuery}
@@ -245,7 +236,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         position: 'absolute',
         zIndex: 99,
-        width: '90%',
+        
         height: 50,
         fontSize: 17                
                 

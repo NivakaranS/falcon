@@ -16,7 +16,7 @@ import settingsIcon from './images/user (2).png';
 import exploreIcon from './images/compass.png';
 import falconIcon from './images/sky.png';
 import mapIcon from './images/globe.png'
-
+ 
 const Tab = createBottomTabNavigator();
 
 const MainAppContainer = () => {
