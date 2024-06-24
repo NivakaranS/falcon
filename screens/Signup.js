@@ -1,4 +1,4 @@
-import {View, Text, Image, StyleSheet, TouchableOpacity, TextInput} from 'react-native';
+import {View, Text, Image, StyleSheet, TouchableOpacity, TextInput, ScrollView} from 'react-native';
 import Logo from '../images/logon.png'
 import Google from '../images/google.png';
 import Facebook from '../images/facebook-new.png';
@@ -7,7 +7,15 @@ import { Feather } from '@expo/vector-icons';
 
 const Signup = () => {
     return(
-        <View style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <ScrollView 
+        style={{flex: 1, display: 'flex', }}
+        contentContainerStyle={
+            {
+                alignItems: 'center', justifyContent: 'center'
+                
+            }
+        }
+        >
             
             <View style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%'}}>
                 <Image source={Logo} style={{height: 71, width: 70}} />
@@ -45,7 +53,7 @@ const Signup = () => {
                 </View>
             </View>
             
-        </View>
+        </ScrollView>
     )
 }
 
