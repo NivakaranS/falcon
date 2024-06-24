@@ -5,6 +5,8 @@ import { useState } from 'react';
 import TutorialContainer from './TutorialContainer';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-gesture-handler';
+import Login from './screens/Login';
+import Signup from './screens/Signup';
 
 const App = () => {
   const [isLoggedin, setIsLoggedin] = useState(true);
@@ -18,7 +20,8 @@ const App = () => {
     <View style={{flex: 1}}>
       {isLoggedin
       ? 
-      <MainAppContainer/>
+      <Signup/>
+      // <MainAppContainer/>
       //<DestinationCard/>
       :
       <GestureHandlerRootView>

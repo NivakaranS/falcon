@@ -102,6 +102,157 @@ const Home = () => {
                     </View>
                 </View>
                 
+                
+            </ScrollView>
+            <Text style={{marginHorizontal: 30, marginVertical: 10, fontSize: 26}}>Explore Destinations</Text>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <View style={{ marginLeft: 30 , display: 'flex', flexDirection: 'row'}}>
+                    
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>All</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Popular</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Trending</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Highly rated</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Highly rated</Text>
+                    </TouchableOpacity>
+                </View>
+            </ScrollView>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <View style={styles.destinationCardsContainer}>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Colombo</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.5</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Moratuwa</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.2</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Ella</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.0</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Kotahena</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.3</Text>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+                
+                
+            </ScrollView>
+            <Text style={{marginHorizontal: 30, marginVertical: 10, fontSize: 26}}>Explore Trips</Text>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <View style={{ marginLeft: 30 , display: 'flex', flexDirection: 'row'}}>
+                    
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>All</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Popular</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Trending</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Highly rated</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.btnContainer}>
+                        <Text style={styles.btnText}>Highly rated</Text>
+                    </TouchableOpacity>
+                </View>
+            </ScrollView>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                <View style={styles.destinationCardsContainer}>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Colombo</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.5</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Moratuwa</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.2</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Ella</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.0</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.destinationCard}>
+                        <View style={{backgroundColor: 'blue', width: '100%', height: '75%', borderTopLeftRadius: 20, borderTopRightRadius: 20}}>
+
+                        </View>
+                        <View style={{backgroundColor: 'gray', width: '100%', height: '25%', borderBottomLeftRadius: 20, borderBottomRightRadius: 20, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between'}}>
+                            <Text style={{marginLeft: 10, fontSize: 16}}>Kotahena</Text>
+                            <View style={{display: 'flex', flexDirection: 'row', marginRight: 10}}>
+                                <Ionicons name='star' size={20} color='orange'style={{marginRight: 5}}/>
+                                <Text>4.3</Text>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+                
+                
             </ScrollView>
             
             
